@@ -5,7 +5,6 @@
   "author": "duaimei",
   "private": true,
   "scripts": {
-    "build": "(npm start --prefix ./backend) && (nuxt build --prefix ./frontend)",
     "build:frontend": "npm run build --prefix ./frontend",
     "build:backend": "npm run start --prefix ./backend",
     "start": "npm run build"
