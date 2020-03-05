@@ -1,0 +1,15 @@
+{
+  "name": "brief-nuxt",
+  "version": "1.0.0",
+  "description": "My impressive Nuxt.js project",
+  "author": "duaimei",
+  "private": true,
+  "scripts": {
+    "build": "(npm start --prefix ./backend) && (nuxt build --prefix ./frontend)",
+    "build:frontend": "npm run build --prefix ./frontend",
+    "build:backend": "npm i --prefix ./frontend && npm start --prefix ./backend",
+    "heroku-postbuild": "npm run build --prefix /frontend",
+    "start": "npm run build",
+    "postinstall": "npm run build --prefix ./frontend"
+  }
+}
